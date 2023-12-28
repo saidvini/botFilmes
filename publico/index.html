@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>bot-Incidentes</title>
+</head>
+<body>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">Incidentes</h5>
+            <span class="text-muted">Incidentes</span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="card text-center" >
+        <h1>
+            Reclame aqui caso encontre algum problema!
+        </h1>
+        <p>
+            Faça a reclamação diretamente com o bot
+        </p>
+        <p>Resolvemos problemas de:</p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <div class="card" style="width: 18rem; margin: 15px;">
+            <img class="card-img-top" src="./internet.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <p class="card-text">Problemas com internet</p>
+
+            </div>
+        </div>
+    
+        <div class="card" style="width: 18rem; margin: 15px;">
+            <img class="card-img-top" src="./email.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <p class="card-text">Problemas com email</p>
+                
+            </div>
+        </div>
+    
+        <div class="card" style="width: 18rem; margin: 15px;">
+            <img class="card-img-top" src="./impressora.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <p class="card-text">Problemas com impressoras</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="botIncidentes"
+  agent-id="1e7d1dc7-9d4b-4af9-822a-05c565c5eb97"
+  language-code="pt-br"
+></df-messenger>
+</html>
